@@ -7,7 +7,7 @@
 
 <img  src = "Screenshot.png">
 <img src = "Screenshot2.png">
-<img src = "Screenshot3.png">
+<img src = "Screenshot 3.png">
 
 <p>
   Paragraph 1  
