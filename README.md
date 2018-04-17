@@ -6,6 +6,8 @@
 <a href = "https://www.youtube.com/watch?v=_GikMdhAhv0">How To Install</a>
 
 <img  src = "Screenshot.png">
+<img src = "Screenshot2.png">
+<img src = "Screenshot3.png>
 
 <p>
   Paragraph 1  
