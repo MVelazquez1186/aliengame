@@ -19,7 +19,7 @@ boss = Image("boss.png", game)
 
 
 pods = []
-for index in range(15):
+for index in range(25):
     pods.append(Image("healthpack.png",game))
 
 for index in range(15):
@@ -30,7 +30,7 @@ for index in range(15):
     pods[index].resizeBy(-95)
 
 ammo = []
-for index in range(15):
+for index in range(25):
     ammo.append(Animation("ammo.png",16,game,512/4,512/4))
 for index in range(15):
     x = randint(100,1000)
@@ -106,13 +106,13 @@ while not game.over:
     if keys.Pressed[K_a]:
         hero2.x -= 10
 
-    for index in range(15):
+    for index in range(25):
         pods[index].move()
         if pods[index].collidedWith(hero2):
             pods[index].visible = False
             hero.health += 20
         
-    for index in range(15):
+    for index in range(25):
         ammo[index].move()
         if ammo[index].collidedWith(hero2):
             ammo[index].visible = False
@@ -122,7 +122,7 @@ while not game.over:
 
     hero2.draw()
 
-    if hero.health >= 200 or ammocount >= 50:
+    if hero.health >= 500 or ammocount >= 100:
         game.over = True
 
     
@@ -164,19 +164,8 @@ while not game.over:
     game.update(30)
 
 
-game.over = False
+game.quit()
 
-while not game.over:
-    game.processInput()
-    game.scrollBackground("left",2)
-    level1.draw()
-
-    boss.draw()
-
-    c.move()
-
-    game.update(30)
-    
 
 
     
